@@ -1,0 +1,351 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3D99B8611CAA222000F4F884 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D99B8601CAA222000F4F884 /* main.m */; };
+		3D99B8641CAA222000F4F884 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D99B8631CAA222000F4F884 /* AppDelegate.m */; };
+		3D99B8671CAA222000F4F884 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D99B8661CAA222000F4F884 /* ViewController.m */; };
+		3D99B86A1CAA222000F4F884 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D99B8681CAA222000F4F884 /* Main.storyboard */; };
+		3D99B86C1CAA222000F4F884 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3D99B86B1CAA222000F4F884 /* Assets.xcassets */; };
+		3D99B86F1CAA222000F4F884 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D99B86D1CAA222000F4F884 /* LaunchScreen.storyboard */; };
+		3D99B8781CAA2E0E00F4F884 /* AnimationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D99B8771CAA2E0E00F4F884 /* AnimationViewController.m */; };
+		3D99B87C1CAA2E5800F4F884 /* BasicAnimationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D99B87B1CAA2E5800F4F884 /* BasicAnimationController.m */; };
+		3D99B87F1CAA61B000F4F884 /* BasicAnimationsVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D99B87E1CAA61B000F4F884 /* BasicAnimationsVC.m */; };
+		3D99B8821CAA66E600F4F884 /* KeyframeAnimationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D99B8811CAA66E600F4F884 /* KeyframeAnimationViewController.m */; };
+		3D99B8851CAA676400F4F884 /* KeyframeAnimationVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D99B8841CAA676400F4F884 /* KeyframeAnimationVC.m */; };
+		3D99B8881CAB7FF600F4F884 /* BasicAnimationCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D99B8871CAB7FF600F4F884 /* BasicAnimationCell.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		3D99B85C1CAA222000F4F884 /* 动画类型.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "动画类型.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3D99B8601CAA222000F4F884 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		3D99B8621CAA222000F4F884 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		3D99B8631CAA222000F4F884 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		3D99B8651CAA222000F4F884 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		3D99B8661CAA222000F4F884 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		3D99B8691CAA222000F4F884 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3D99B86B1CAA222000F4F884 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3D99B86E1CAA222000F4F884 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3D99B8701CAA222000F4F884 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3D99B8761CAA2E0E00F4F884 /* AnimationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnimationViewController.h; sourceTree = "<group>"; };
+		3D99B8771CAA2E0E00F4F884 /* AnimationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnimationViewController.m; sourceTree = "<group>"; };
+		3D99B87A1CAA2E5800F4F884 /* BasicAnimationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BasicAnimationController.h; sourceTree = "<group>"; };
+		3D99B87B1CAA2E5800F4F884 /* BasicAnimationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BasicAnimationController.m; sourceTree = "<group>"; };
+		3D99B87D1CAA61B000F4F884 /* BasicAnimationsVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BasicAnimationsVC.h; sourceTree = "<group>"; };
+		3D99B87E1CAA61B000F4F884 /* BasicAnimationsVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BasicAnimationsVC.m; sourceTree = "<group>"; };
+		3D99B8801CAA66E600F4F884 /* KeyframeAnimationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KeyframeAnimationViewController.h; sourceTree = "<group>"; };
+		3D99B8811CAA66E600F4F884 /* KeyframeAnimationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KeyframeAnimationViewController.m; sourceTree = "<group>"; };
+		3D99B8831CAA676400F4F884 /* KeyframeAnimationVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KeyframeAnimationVC.h; sourceTree = "<group>"; };
+		3D99B8841CAA676400F4F884 /* KeyframeAnimationVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KeyframeAnimationVC.m; sourceTree = "<group>"; };
+		3D99B8861CAB7FF600F4F884 /* BasicAnimationCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BasicAnimationCell.h; sourceTree = "<group>"; };
+		3D99B8871CAB7FF600F4F884 /* BasicAnimationCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BasicAnimationCell.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3D99B8591CAA222000F4F884 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3D99B8531CAA222000F4F884 = {
+			isa = PBXGroup;
+			children = (
+				3D99B85E1CAA222000F4F884 /* 动画类型 */,
+				3D99B85D1CAA222000F4F884 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3D99B85D1CAA222000F4F884 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3D99B85C1CAA222000F4F884 /* 动画类型.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3D99B85E1CAA222000F4F884 /* 动画类型 */ = {
+			isa = PBXGroup;
+			children = (
+				3D99B8791CAA2E2E00F4F884 /* animationVCs */,
+				3D99B8621CAA222000F4F884 /* AppDelegate.h */,
+				3D99B8631CAA222000F4F884 /* AppDelegate.m */,
+				3D99B8761CAA2E0E00F4F884 /* AnimationViewController.h */,
+				3D99B8771CAA2E0E00F4F884 /* AnimationViewController.m */,
+				3D99B8651CAA222000F4F884 /* ViewController.h */,
+				3D99B8661CAA222000F4F884 /* ViewController.m */,
+				3D99B8681CAA222000F4F884 /* Main.storyboard */,
+				3D99B86B1CAA222000F4F884 /* Assets.xcassets */,
+				3D99B86D1CAA222000F4F884 /* LaunchScreen.storyboard */,
+				3D99B8701CAA222000F4F884 /* Info.plist */,
+				3D99B85F1CAA222000F4F884 /* Supporting Files */,
+			);
+			path = "动画类型";
+			sourceTree = "<group>";
+		};
+		3D99B85F1CAA222000F4F884 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3D99B8601CAA222000F4F884 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3D99B8791CAA2E2E00F4F884 /* animationVCs */ = {
+			isa = PBXGroup;
+			children = (
+				3D99B8861CAB7FF600F4F884 /* BasicAnimationCell.h */,
+				3D99B8871CAB7FF600F4F884 /* BasicAnimationCell.m */,
+				3D99B87A1CAA2E5800F4F884 /* BasicAnimationController.h */,
+				3D99B87B1CAA2E5800F4F884 /* BasicAnimationController.m */,
+				3D99B87D1CAA61B000F4F884 /* BasicAnimationsVC.h */,
+				3D99B87E1CAA61B000F4F884 /* BasicAnimationsVC.m */,
+				3D99B8801CAA66E600F4F884 /* KeyframeAnimationViewController.h */,
+				3D99B8811CAA66E600F4F884 /* KeyframeAnimationViewController.m */,
+				3D99B8831CAA676400F4F884 /* KeyframeAnimationVC.h */,
+				3D99B8841CAA676400F4F884 /* KeyframeAnimationVC.m */,
+			);
+			path = animationVCs;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3D99B85B1CAA222000F4F884 /* 动画类型 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3D99B8731CAA222000F4F884 /* Build configuration list for PBXNativeTarget "动画类型" */;
+			buildPhases = (
+				3D99B8581CAA222000F4F884 /* Sources */,
+				3D99B8591CAA222000F4F884 /* Frameworks */,
+				3D99B85A1CAA222000F4F884 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "动画类型";
+			productName = "动画类型";
+			productReference = 3D99B85C1CAA222000F4F884 /* 动画类型.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3D99B8541CAA222000F4F884 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = kang;
+				TargetAttributes = {
+					3D99B85B1CAA222000F4F884 = {
+						CreatedOnToolsVersion = 7.2.1;
+					};
+				};
+			};
+			buildConfigurationList = 3D99B8571CAA222000F4F884 /* Build configuration list for PBXProject "动画类型" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3D99B8531CAA222000F4F884;
+			productRefGroup = 3D99B85D1CAA222000F4F884 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3D99B85B1CAA222000F4F884 /* 动画类型 */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3D99B85A1CAA222000F4F884 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3D99B86F1CAA222000F4F884 /* LaunchScreen.storyboard in Resources */,
+				3D99B86C1CAA222000F4F884 /* Assets.xcassets in Resources */,
+				3D99B86A1CAA222000F4F884 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3D99B8581CAA222000F4F884 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3D99B87F1CAA61B000F4F884 /* BasicAnimationsVC.m in Sources */,
+				3D99B8671CAA222000F4F884 /* ViewController.m in Sources */,
+				3D99B8641CAA222000F4F884 /* AppDelegate.m in Sources */,
+				3D99B8611CAA222000F4F884 /* main.m in Sources */,
+				3D99B87C1CAA2E5800F4F884 /* BasicAnimationController.m in Sources */,
+				3D99B8851CAA676400F4F884 /* KeyframeAnimationVC.m in Sources */,
+				3D99B8781CAA2E0E00F4F884 /* AnimationViewController.m in Sources */,
+				3D99B8821CAA66E600F4F884 /* KeyframeAnimationViewController.m in Sources */,
+				3D99B8881CAB7FF600F4F884 /* BasicAnimationCell.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		3D99B8681CAA222000F4F884 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3D99B8691CAA222000F4F884 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		3D99B86D1CAA222000F4F884 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3D99B86E1CAA222000F4F884 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3D99B8711CAA222000F4F884 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3D99B8721CAA222000F4F884 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3D99B8741CAA222000F4F884 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "动画类型/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.xbstar.app.AnimationDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		3D99B8751CAA222000F4F884 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "动画类型/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.xbstar.app.AnimationDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3D99B8571CAA222000F4F884 /* Build configuration list for PBXProject "动画类型" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3D99B8711CAA222000F4F884 /* Debug */,
+				3D99B8721CAA222000F4F884 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3D99B8731CAA222000F4F884 /* Build configuration list for PBXNativeTarget "动画类型" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3D99B8741CAA222000F4F884 /* Debug */,
+				3D99B8751CAA222000F4F884 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3D99B8541CAA222000F4F884 /* Project object */;
+}
