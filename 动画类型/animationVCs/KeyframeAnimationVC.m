@@ -20,15 +20,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self.view setBackgroundColor:[UIColor whiteColor]];
-//    _imageView = [[UIImageView alloc]init];
-//    [_imageView setImage:[UIImage imageNamed:@"lufei2"]];
-//    [self.view addSubview:_imageView];
-    
-//    [self positionAnimation];
-//    [self initRectLayer];
-//    [self transformAnimation];
-}
 
+}
 
 
 - (void) movePointAnimation {
@@ -41,31 +34,30 @@
     [self.view addSubview:_imageView];
     
     
-    CGFloat w = self.view.bounds.size.width - 60 ;
-    CGFloat h = self.view.bounds.size.height- 60 - 60;
-    
+//    CGFloat w = self.view.bounds.size.width - 60 ;
+//    CGFloat h = self.view.bounds.size.height- 60 - 60;
 //    CGFloat xoffset = w/5;
-    CGFloat yoffset = h/5;
+//    CGFloat yoffset = h/5;
     
     [UIView animateKeyframesWithDuration: 4 delay: 0 options: UIViewKeyframeAnimationOptionCalculationModeLinear animations: ^{
-        __block CGPoint center = _imageView.center;
+//        __block CGPoint center = _imageView.center;
         [UIView addKeyframeWithRelativeStartTime: 0 relativeDuration: 0.1 animations: ^{
-            _imageView.center = (CGPoint){ center.x + 0.1 * w, center.y + yoffset };
+            _imageView.center = (CGPoint){ 50, 300  };
         }];
         [UIView addKeyframeWithRelativeStartTime: 0.1 relativeDuration: 0.15 animations: ^{
-            _imageView.center = (CGPoint){ center.x + 0.25 * w, center.y + 0.25 * h };
+            _imageView.center = (CGPoint){ 100 , 100 };
         }];
         [UIView addKeyframeWithRelativeStartTime: 0.25 relativeDuration: 0.3 animations: ^{
-            _imageView.center = (CGPoint){ center.x + 0.55 * w, center.y + 0.55 * h };
+            _imageView.center = (CGPoint){ 150, 250 };
         }];
         [UIView addKeyframeWithRelativeStartTime: 0.55 relativeDuration: 0.3 animations: ^{
-            _imageView.center = (CGPoint){ center.x + 0.85 * w, center.y + 0.85 * h };
+            _imageView.center = (CGPoint){ 200, 450 };
         }];
         [UIView addKeyframeWithRelativeStartTime: 0.85 relativeDuration: 0.15 animations: ^{
-            _imageView.center = (CGPoint){ center.x + w, center.y + h };
+            _imageView.center = (CGPoint){ 300, 200 };
         }];
         [UIView addKeyframeWithRelativeStartTime: 0 relativeDuration: 1 animations: ^{
-            _imageView.transform = CGAffineTransformMakeRotation(0.5 * M_PI);
+            _imageView.transform = CGAffineTransformMakeRotation(2 * M_PI);
         }];
     } completion: nil];
 
@@ -229,6 +221,93 @@
     CFRelease(path);  
     [_imageView.layer addAnimation:animation forKey:NULL];
     
+}
+
+//背景色动画
+- (void) backgroundColorAnimation {
+    
+    
+    CAKeyframeAnimation *animation=[CAKeyframeAnimation animationWithKeyPath:@"backgroundColor"];
+    
+    animation.values= @[
+                        (id)[UIColor redColor].CGColor,
+                        (id)[UIColor yellowColor].CGColor,
+                        (id)[UIColor blueColor].CGColor
+                        ];
+    //设定每个关键帧的时长，如果没有显式地设置，则默认每个帧的时间=总duration/(values.count - 1)
+    animation.keyTimes = @[
+                            [NSNumber numberWithFloat:0.0],
+                            [NSNumber numberWithFloat:0.8],
+                            [NSNumber numberWithFloat:1.2],
+                            [NSNumber numberWithFloat:1.5]
+                           ];
+    
+    animation.repeatCount=MAXFLOAT;
+    
+    animation.duration=1.5;
+    
+    animation.removedOnCompletion=NO;
+    
+    animation.fillMode=kCAFillModeForwards;
+    
+    animation.timingFunction=[CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseIn];
+    
+    animation.autoreverses=YES;
+    
+    
+    //演员初始化
+    CALayer *backgroundLayer = [[CALayer alloc] init];
+    backgroundLayer.backgroundColor = [UIColor blueColor].CGColor;
+    backgroundLayer.bounds = CGRectMake(0, 0, 50, 50);
+    backgroundLayer.cornerRadius = 10;
+    [self.view.layer addSublayer:backgroundLayer];
+    backgroundLayer.position = self.view.center;
+    
+    //开演
+    [backgroundLayer addAnimation:animation forKey:@"backgroundLayerAnimation"];
+}
+
+//内容动画
+- (void) contentsAnimation {
+    
+    UIImageView *_imageView = [[UIImageView alloc]init];
+    [_imageView setImage:[UIImage imageNamed:@"lufei2"]];
+    _imageView.bounds = CGRectMake(0, 0, 100, 200);
+    _imageView.center = self.view.center;
+    _imageView.layer.cornerRadius = 5;
+    [self.view addSubview:_imageView];
+    
+    
+    id value0 = (id)[UIImage imageNamed:@"lufei2"].CGImage;
+    id value1 = (id)[UIImage imageNamed:@"lufei8"].CGImage;
+    id value2 = (id)[UIImage imageNamed:@"suolong2"].CGImage;
+    id value3 = (id)[UIImage imageNamed:@"suolong3"].CGImage;
+    
+    
+    
+    CAKeyframeAnimation *animation = [CAKeyframeAnimation animationWithKeyPath:@"contents"];
+    [animation setDuration:2];
+    animation.repeatCount=MAXFLOAT;
+    animation.removedOnCompletion=NO;
+    animation.fillMode=kCAFillModeForwards;
+    
+    
+    [animation setValues:@[value0,value1,value2,value3]];
+     
+    [animation setKeyTimes:[NSArray arrayWithObjects:
+                          [NSNumber numberWithFloat:0.0],
+                          [NSNumber numberWithFloat:0.3f],
+                          [NSNumber numberWithFloat:0.8f],
+                          [NSNumber numberWithFloat:2.0f],
+                          nil]];
+
+    
+    //这句代码表示 是否动画回到原位
+    [animation setAutoreverses:YES];
+    [animation setRemovedOnCompletion:NO];
+    animation.calculationMode = kCAAnimationLinear;
+    //begin animation
+    [_imageView.layer addAnimation:animation forKey:NULL];
     
 }
 
@@ -256,10 +335,10 @@
 
     //设定每个关键帧的时长，如果没有显式地设置，则默认每个帧的时间=总duration/(values.count - 1)
     rectRunAnimation.keyTimes = @[[NSNumber numberWithFloat:0.0],
-                               [NSNumber numberWithFloat:1.0],
-                               [NSNumber numberWithFloat:1.5],
-                               [NSNumber numberWithFloat:2.0],
-                               [NSNumber numberWithFloat:3]];
+                               [NSNumber numberWithFloat:0.5],
+                               [NSNumber numberWithFloat:0.7],
+                               [NSNumber numberWithFloat:0.9],
+                               [NSNumber numberWithFloat:1.2]];
     
     rectRunAnimation.timingFunctions = @[
                                       [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseInEaseOut],
@@ -270,8 +349,8 @@
     rectRunAnimation.repeatCount = 1000;
     rectRunAnimation.autoreverses = NO;
     [rectRunAnimation setRemovedOnCompletion:NO];
-    rectRunAnimation.calculationMode = kCAAnimationLinear;
-    rectRunAnimation.duration = 3;
+//    rectRunAnimation.calculationMode = kCAAnimationLinear;
+    rectRunAnimation.duration = 1.2;
     [rectLayer addAnimation:rectRunAnimation forKey:@"rectRunAnimation"];
 
 }

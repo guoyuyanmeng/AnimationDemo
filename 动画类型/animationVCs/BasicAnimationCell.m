@@ -42,6 +42,9 @@
 
 }
 
+
+#pragma mark - Animation Types
+
 //缩放动画
 - (void)initScaleLayer
 {
@@ -244,6 +247,11 @@
     [groupLayer addAnimation:groupAnnimation forKey:@"groupAnnimation"];
 }
 
+
+
+
+#pragma mark - Animation Operation
+
 //动画暂停
 -(void)pauseLayer
 {
@@ -252,14 +260,13 @@
     _imageView.layer.timeOffset = pausedTime;
 }
 
+
 //移除动画
 -(void) removeLayer
 {
     [_imageView.layer removeAllAnimations];
-//    CFTimeInterval pausedTime = [_imageView.layer convertTime:CACurrentMediaTime() fromLayer:nil];
-//    _imageView.layer.speed = 0.0;
-//    _imageView.layer.timeOffset = pausedTime;
 }
+
 
 //继续动画
 -(void)resumeLayer

@@ -10,6 +10,7 @@
 #import "AnimationViewController.h"
 #import "BasicAnimationController.h"
 #import "KeyframeAnimationViewController.h"
+#import "TransitionAnimationViewController.h"
 
 @interface ViewController ()<UITableViewDelegate, UITableViewDataSource>
 {
@@ -119,19 +120,17 @@ NSString * cellIdentify = @"cellIdentify";
         case 2://属性动画,CAPropertyAnimation
         {
             animationVC.title = @"关键帧动画";
-            [self.navigationController pushViewController:animationVC animated:YES];
             break;
         }
         case 3://动画组,CAAnimationGroup
         {
             animationVC.title = @"动画组";
-            [self.navigationController pushViewController:animationVC animated:YES];
             break;
         }
         case 4://转场动画,CATransition
         {
+            animationVC = [[TransitionAnimationViewController alloc]init];
             animationVC.title = @"转场动画";
-            [self.navigationController pushViewController:animationVC animated:YES];
             break;
         }
         default:

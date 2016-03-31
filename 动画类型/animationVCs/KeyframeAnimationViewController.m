@@ -21,6 +21,7 @@
 @end
 
 @implementation KeyframeAnimationViewController
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     
@@ -37,18 +38,6 @@
 }
 
 
-- (void) viewDidAppear:(BOOL)animated {
-    [super viewDidAppear:animated];
-    
-    
-    //    [self initScaleLayer];
-    //    [self initGroupLayer];
-    
-    //    [self initPositionLayer];
-    //    [self initTransformXLayer];
-}
-
-
 -(void) createDataArrayObject {
     
     _dataArray = [[NSMutableArray alloc]init];
@@ -58,6 +47,10 @@
     [_dataArray addObject:@"movePointAnimation"];
     [_dataArray addObject:@"initRectLayer"];
     [_dataArray addObject:@"multiPathAnimation"];
+    [_dataArray addObject:@"contentsAnimation"];
+    [_dataArray addObject:@"backgroundColorAnimation"];
+    
+    
     
     
     //添加核心动画类型
@@ -75,6 +68,10 @@
     
     [dictionary setObject:@"多路径动画" forKey:@"multiPathAnimation"];
     
+    [dictionary setObject:@"内容动画" forKey:@"contentsAnimation"];
+    
+    [dictionary setObject:@"背景色动画" forKey:@"backgroundColorAnimation"];
+
     _dic = dictionary;
 }
 
@@ -151,7 +148,18 @@
                 [vc performSelector:@selector(multiPathAnimation)];
             break;
         }
-
+        case 6:
+        {
+            if (class_respondsToSelector(object_getClass(vc), @selector(contentsAnimation)) )
+                [vc performSelector:@selector(contentsAnimation)];
+            break;
+        }
+        case 7:
+        {
+            if (class_respondsToSelector(object_getClass(vc), @selector(backgroundColorAnimation)) )
+                [vc performSelector:@selector(backgroundColorAnimation)];
+            break;
+        }
         default:{
             
             NSLog(@"default,%ld",(long)indexPath.row);
