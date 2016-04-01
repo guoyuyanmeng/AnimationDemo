@@ -178,9 +178,9 @@
     animation.endProgress = 1.0;  //动画停止终点(在整体动画的百分比)
     animation.removedOnCompletion = YES;
     
-//    animation.type = _animationType;
-    animation.type = @"twist";
-//    animation.subtype = @"fromLeft"; //过渡方向
+    animation.type = _animationType;
+//    animation.type = @"curlUp";
+    animation.subtype = @"fromLeft"; //过渡方向
     
     
     //执行动画
@@ -204,6 +204,7 @@
     }
     isBlue = !isBlue;
     
+    NSLog(@"type = %@",animation.type);
 }
 
 

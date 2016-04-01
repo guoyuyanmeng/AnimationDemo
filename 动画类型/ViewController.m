@@ -11,6 +11,7 @@
 #import "BasicAnimationController.h"
 #import "KeyframeAnimationViewController.h"
 #import "TransitionAnimationViewController.h"
+#import "GroupAnimationViewController.h"
 
 @interface ViewController ()<UITableViewDelegate, UITableViewDataSource>
 {
@@ -107,7 +108,6 @@ NSString * cellIdentify = @"cellIdentify";
         {
             animationVC = [[BasicAnimationController alloc]init];
             animationVC.title = @"基础动画";
-            
             break;
         
         }
@@ -124,6 +124,8 @@ NSString * cellIdentify = @"cellIdentify";
         }
         case 3://动画组,CAAnimationGroup
         {
+            animationVC = [[GroupAnimationViewController alloc]init];
+            [animationVC performSelector:@selector(initGroupLayer)];
             animationVC.title = @"动画组";
             break;
         }

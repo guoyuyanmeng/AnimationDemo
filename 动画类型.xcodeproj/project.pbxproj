@@ -21,6 +21,7 @@
 		3D99B8881CAB7FF600F4F884 /* BasicAnimationCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D99B8871CAB7FF600F4F884 /* BasicAnimationCell.m */; };
 		3D99B88E1CACA94300F4F884 /* TransitionAnimationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D99B88D1CACA94300F4F884 /* TransitionAnimationViewController.m */; };
 		3D99B8911CACAA0000F4F884 /* TransitionAnimationVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D99B8901CACAA0000F4F884 /* TransitionAnimationVC.m */; };
+		3D99B8961CAE4E2600F4F884 /* GroupAnimationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D99B8951CAE4E2600F4F884 /* GroupAnimationViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +51,8 @@
 		3D99B88D1CACA94300F4F884 /* TransitionAnimationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TransitionAnimationViewController.m; sourceTree = "<group>"; };
 		3D99B88F1CACAA0000F4F884 /* TransitionAnimationVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TransitionAnimationVC.h; sourceTree = "<group>"; };
 		3D99B8901CACAA0000F4F884 /* TransitionAnimationVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TransitionAnimationVC.m; sourceTree = "<group>"; };
+		3D99B8941CAE4E2600F4F884 /* GroupAnimationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GroupAnimationViewController.h; sourceTree = "<group>"; };
+		3D99B8951CAE4E2600F4F884 /* GroupAnimationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GroupAnimationViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +112,7 @@
 		3D99B8791CAA2E2E00F4F884 /* animationVCs */ = {
 			isa = PBXGroup;
 			children = (
+				3D99B8921CAE4DD900F4F884 /* animationGroup */,
 				3D99B88B1CACA90C00F4F884 /* transitionAnimation */,
 				3D99B88A1CACA8F500F4F884 /* keyframeAnimation */,
 				3D99B8891CACA8DE00F4F884 /* basicAnimation */,
@@ -149,6 +153,15 @@
 				3D99B8901CACAA0000F4F884 /* TransitionAnimationVC.m */,
 			);
 			name = transitionAnimation;
+			sourceTree = "<group>";
+		};
+		3D99B8921CAE4DD900F4F884 /* animationGroup */ = {
+			isa = PBXGroup;
+			children = (
+				3D99B8941CAE4E2600F4F884 /* GroupAnimationViewController.h */,
+				3D99B8951CAE4E2600F4F884 /* GroupAnimationViewController.m */,
+			);
+			name = animationGroup;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -230,6 +243,7 @@
 				3D99B87C1CAA2E5800F4F884 /* BasicAnimationController.m in Sources */,
 				3D99B8851CAA676400F4F884 /* KeyframeAnimationVC.m in Sources */,
 				3D99B8781CAA2E0E00F4F884 /* AnimationViewController.m in Sources */,
+				3D99B8961CAE4E2600F4F884 /* GroupAnimationViewController.m in Sources */,
 				3D99B8821CAA66E600F4F884 /* KeyframeAnimationViewController.m in Sources */,
 				3D99B8881CAB7FF600F4F884 /* BasicAnimationCell.m in Sources */,
 			);

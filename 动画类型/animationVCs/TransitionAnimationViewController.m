@@ -93,27 +93,35 @@
     [_dataArray addObject:@"kCATransitionFade"];
     
     [_dataArray addObject:@"cube"];
+    [_dataArray addObject:@"alignedCube"];
+    
     [_dataArray addObject:@"suckEffect"];
     [_dataArray addObject:@"rippleEffect"];
+    
     [_dataArray addObject:@"pageCurl"];
     [_dataArray addObject:@"pageUnCurl"];
+    
+    [_dataArray addObject:@"flip"];
+    [_dataArray addObject:@"alignedFlip"];
     [_dataArray addObject:@"oglFlip"];
+    
+    [_dataArray addObject:@"cameraIris"];
     [_dataArray addObject:@"cameraIrisHollowOpen"];
     [_dataArray addObject:@"cameraIrisHollowClose"];
     
     
     
     
-    [_dataArray addObject:@"spewEffect"];
-    [_dataArray addObject:@"genieEffect"];
-    [_dataArray addObject:@"unGenieEffect"];
-    [_dataArray addObject:@"twist"];
-    [_dataArray addObject:@"tubey"];
-    [_dataArray addObject:@"swirl"];
-    [_dataArray addObject:@"charminUltra"];
-    [_dataArray addObject:@"zoomyIn"];
-    [_dataArray addObject:@"zoomyOut"];
-    [_dataArray addObject:@"oglApplicationSuspend"];
+//    [_dataArray addObject:@"spewEffect"];
+//    [_dataArray addObject:@"genieEffect"];
+//    [_dataArray addObject:@"unGenieEffect"];
+//    [_dataArray addObject:@"twist"];
+//    [_dataArray addObject:@"tubey"];
+//    [_dataArray addObject:@"swirl"];
+//    [_dataArray addObject:@"charminUltra"];
+//    [_dataArray addObject:@"zoomyIn"];
+//    [_dataArray addObject:@"zoomyOut"];
+//    [_dataArray addObject:@"oglApplicationSuspend"];
 
     
     
@@ -124,29 +132,37 @@
     [dictionary setObject:@"推入效果" forKey:@"kCATransitionPush"];
     [dictionary setObject:@"移入效果" forKey:@"kCATransitionMoveIn"];
     [dictionary setObject:@"截开效果" forKey:@"kCATransitionReveal"];
-    [dictionary setObject:@"渐入渐出效果" forKey:@"kCATransitionFade"];
+    [dictionary setObject:@"渐入渐出" forKey:@"kCATransitionFade"];
     
     
-    [dictionary setObject:@"方块" forKey:@"cube"];
+    [dictionary setObject:@"立体效果一" forKey:@"cube"];
+    [dictionary setObject:@"立体效果二" forKey:@"alignedCube"];
+    
     [dictionary setObject:@"三角" forKey:@"suckEffect"];
     [dictionary setObject:@"水波抖动" forKey:@"rippleEffect"];
+    
     [dictionary setObject:@"上翻页" forKey:@"pageCurl"];
     [dictionary setObject:@"下翻页" forKey:@"pageUnCurl"];
-    [dictionary setObject:@"上下翻转" forKey:@"oglFlip"];
+    
+    [dictionary setObject:@"翻转效果一" forKey:@"flip"];
+    [dictionary setObject:@"翻转效果二" forKey:@"alignedFlip"];
+    [dictionary setObject:@"翻转效果三" forKey:@"oglFlip"];
+    
+    [dictionary setObject:@"镜头快门" forKey:@"cameraIris"];
     [dictionary setObject:@"镜头快门开" forKey:@"cameraIrisHollowOpen"];
-    [dictionary setObject:@"镜头快门开" forKey:@"cameraIrisHollowClose"];
+    [dictionary setObject:@"镜头快门关" forKey:@"cameraIrisHollowClose"];
     
     
-    [dictionary setObject:@"新版面在屏幕下方中间位置被释放出来覆盖旧版面." forKey:@"spewEffect"];
-    [dictionary setObject:@"旧版面在屏幕左下方或右下方被吸走, 显示出下面的新版面" forKey:@"genieEffect"];
-    [dictionary setObject:@"新版面在屏幕左下方或右下方被释放出来覆盖旧版面." forKey:@"unGenieEffect"];
-    [dictionary setObject:@"版面以水平方向像龙卷风式转出来." forKey:@"twist"];
-    [dictionary setObject:@"版面垂直附有弹性的转出来." forKey:@"tubey"];
-    [dictionary setObject:@"旧版面360度旋转并淡出, 显示出新版面." forKey:@"swirl"];
-    [dictionary setObject:@"旧版面淡出并显示新版面." forKey:@"charminUltra"];
-    [dictionary setObject:@"新版面由小放大走到前面, 旧版面放大由前面消失." forKey:@"zoomyIn"];
-    [dictionary setObject:@"新版面屏幕外面缩放出现, 旧版面缩小消失." forKey:@"zoomyOut"];
-    [dictionary setObject:@"像按”home” 按钮的效果." forKey:@"oglApplicationSuspend"];
+//    [dictionary setObject:@"新版面在屏幕下方中间位置被释放出来覆盖旧版面." forKey:@"spewEffect"];
+//    [dictionary setObject:@"旧版面在屏幕左下方或右下方被吸走, 显示出下面的新版面" forKey:@"genieEffect"];
+//    [dictionary setObject:@"新版面在屏幕左下方或右下方被释放出来覆盖旧版面." forKey:@"unGenieEffect"];
+//    [dictionary setObject:@"版面以水平方向像龙卷风式转出来." forKey:@"twist"];
+//    [dictionary setObject:@"版面垂直附有弹性的转出来." forKey:@"tubey"];
+//    [dictionary setObject:@"旧版面360度旋转并淡出, 显示出新版面." forKey:@"swirl"];
+//    [dictionary setObject:@"旧版面淡出并显示新版面." forKey:@"charminUltra"];
+//    [dictionary setObject:@"新版面由小放大走到前面, 旧版面放大由前面消失." forKey:@"zoomyIn"];
+//    [dictionary setObject:@"新版面屏幕外面缩放出现, 旧版面缩小消失." forKey:@"zoomyOut"];
+//    [dictionary setObject:@"像按”home” 按钮的效果." forKey:@"oglApplicationSuspend"];
     
     _dic = dictionary;
 }
@@ -156,7 +172,7 @@
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView  {
 
-    return 3;
+    return 2;
 }
 
 - (NSInteger) tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
@@ -164,10 +180,11 @@
     if (section == 0) {
         return 4;
     }else if (section == 1) {
-        return 8;
-    }else if (section == 2) {
-        return 10;
+        return 12;
     }
+//    else if (section == 2) {
+//        return 10;
+//    }
     return 0;
 }
 
@@ -182,10 +199,11 @@
     if (section == 0) {
         return @"四种基本效果";
     }else if (section == 1) {
-        return @"8种安全API效果";
-    }else if (section == 2) {
-        return @"10种非安全API效果";
+        return @"其它API效果";
     }
+//    else if (section == 2) {
+//        return @"10种非安全API效果";
+//    }
     return nil;
 }
 
@@ -209,10 +227,11 @@
     }else if (indexPath.section == 1) {
         cell.textLabel.text = [_dataArray objectAtIndex:indexPath.row +4 ];
         cell.detailTextLabel.text = [_dic valueForKey:[_dataArray objectAtIndex:indexPath.row+ 4]];
-    }else if (indexPath.section == 2) {
-        cell.textLabel.text = [_dataArray objectAtIndex:indexPath.row + 12];
-        cell.detailTextLabel.text = [_dic valueForKey:[_dataArray objectAtIndex:indexPath.row+ 12]];
     }
+//    else if (indexPath.section == 2) {
+//        cell.textLabel.text = [_dataArray objectAtIndex:indexPath.row + 12];
+//        cell.detailTextLabel.text = [_dic valueForKey:[_dataArray objectAtIndex:indexPath.row+ 12]];
+//    }
    
     return cell;
 }
@@ -225,11 +244,14 @@
     NSInteger typeIndex = 0 ;
     if (indexPath.section == 0) {
         typeIndex = -1 ;
+        vc.title = [_dic valueForKey:[_dataArray objectAtIndex:indexPath.row]];
     }else if (indexPath.section == 1) {
         typeIndex = indexPath.row +4;
-    }else if (indexPath.section == 2) {
-        typeIndex = indexPath.row +12;
+        vc.title = [_dic valueForKey:[_dataArray objectAtIndex:indexPath.row + 4]];
     }
+//    else if (indexPath.section == 2) {
+//        typeIndex = indexPath.row +12;
+//    }
     
     
     //定义动画
@@ -287,7 +309,7 @@
     [self.navigationController.view.layer addAnimation:animation forKey:nil];
     
     
-    vc.title = [_dic valueForKey:[_dataArray objectAtIndex:indexPath.row]];
+//    vc.title = [_dic valueForKey:[_dataArray objectAtIndex:indexPath.row]];
     [self.navigationController pushViewController:vc animated:YES];
 }
 
