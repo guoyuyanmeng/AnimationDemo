@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3D46312D1D9E0EBE00C72DBF /* KeyboardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D46312B1D9E0EBE00C72DBF /* KeyboardViewController.m */; };
+		3D46312E1D9E0EBF00C72DBF /* KeyboardViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3D46312C1D9E0EBE00C72DBF /* KeyboardViewController.xib */; };
 		3D99B8611CAA222000F4F884 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D99B8601CAA222000F4F884 /* main.m */; };
 		3D99B8641CAA222000F4F884 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D99B8631CAA222000F4F884 /* AppDelegate.m */; };
 		3D99B8671CAA222000F4F884 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D99B8661CAA222000F4F884 /* ViewController.m */; };
@@ -25,6 +27,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3D46312A1D9E0EBE00C72DBF /* KeyboardViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KeyboardViewController.h; sourceTree = "<group>"; };
+		3D46312B1D9E0EBE00C72DBF /* KeyboardViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KeyboardViewController.m; sourceTree = "<group>"; };
+		3D46312C1D9E0EBE00C72DBF /* KeyboardViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KeyboardViewController.xib; sourceTree = "<group>"; };
 		3D99B85C1CAA222000F4F884 /* 动画类型.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "动画类型.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D99B8601CAA222000F4F884 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		3D99B8621CAA222000F4F884 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -66,6 +71,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3D4631291D9E0E2400C72DBF /* KeyBoardAnimation */ = {
+			isa = PBXGroup;
+			children = (
+				3D46312A1D9E0EBE00C72DBF /* KeyboardViewController.h */,
+				3D46312B1D9E0EBE00C72DBF /* KeyboardViewController.m */,
+				3D46312C1D9E0EBE00C72DBF /* KeyboardViewController.xib */,
+			);
+			name = KeyBoardAnimation;
+			sourceTree = "<group>";
+		};
 		3D99B8531CAA222000F4F884 = {
 			isa = PBXGroup;
 			children = (
@@ -116,6 +131,7 @@
 				3D99B88B1CACA90C00F4F884 /* transitionAnimation */,
 				3D99B88A1CACA8F500F4F884 /* keyframeAnimation */,
 				3D99B8891CACA8DE00F4F884 /* basicAnimation */,
+				3D4631291D9E0E2400C72DBF /* KeyBoardAnimation */,
 			);
 			path = animationVCs;
 			sourceTree = "<group>";
@@ -195,6 +211,7 @@
 				TargetAttributes = {
 					3D99B85B1CAA222000F4F884 = {
 						CreatedOnToolsVersion = 7.2.1;
+						DevelopmentTeam = LQHT8X75PQ;
 					};
 				};
 			};
@@ -224,6 +241,7 @@
 				3D99B86F1CAA222000F4F884 /* LaunchScreen.storyboard in Resources */,
 				3D99B86C1CAA222000F4F884 /* Assets.xcassets in Resources */,
 				3D99B86A1CAA222000F4F884 /* Main.storyboard in Resources */,
+				3D46312E1D9E0EBF00C72DBF /* KeyboardViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -237,6 +255,7 @@
 				3D99B87F1CAA61B000F4F884 /* BasicAnimationsVC.m in Sources */,
 				3D99B8671CAA222000F4F884 /* ViewController.m in Sources */,
 				3D99B8911CACAA0000F4F884 /* TransitionAnimationVC.m in Sources */,
+				3D46312D1D9E0EBE00C72DBF /* KeyboardViewController.m in Sources */,
 				3D99B88E1CACA94300F4F884 /* TransitionAnimationViewController.m in Sources */,
 				3D99B8641CAA222000F4F884 /* AppDelegate.m in Sources */,
 				3D99B8611CAA222000F4F884 /* main.m in Sources */,
@@ -357,7 +376,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = LQHT8X75PQ;
 				INFOPLIST_FILE = "动画类型/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.xbstar.app.AnimationDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -368,7 +389,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = LQHT8X75PQ;
 				INFOPLIST_FILE = "动画类型/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.xbstar.app.AnimationDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";

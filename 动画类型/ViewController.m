@@ -12,6 +12,7 @@
 #import "KeyframeAnimationViewController.h"
 #import "TransitionAnimationViewController.h"
 #import "GroupAnimationViewController.h"
+#import "KeyboardViewController.h"
 
 @interface ViewController ()<UITableViewDelegate, UITableViewDataSource>
 {
@@ -49,6 +50,7 @@ NSString * cellIdentify = @"cellIdentify";
     [_dataArray addObject:@"CAPropertyAnimation"];
     [_dataArray addObject:@"CAAnimationGroup"];
     [_dataArray addObject:@"CATransition"];
+    [_dataArray addObject:@"KeyboardAnimation"];
     
     //添加核心动画类型
     //CAAnimation 包含以下几种动画类型
@@ -62,6 +64,8 @@ NSString * cellIdentify = @"cellIdentify";
     [dictionary setObject:@"动画组，动画组是一种组合模式设计，可以通过动画组来进行所有动画行为的统一控制，组中所有动画效果可以并发执行。" forKey:@"CAAnimationGroup"];
     
     [dictionary setObject:@"转场动画，主要通过滤镜进行动画效果设置。" forKey:@"CATransition"];
+    
+    [dictionary setObject:@"键盘动画，键盘显示隐藏，以及键盘切换。" forKey:@"KeyboardAnimation"];
 
     _dic = dictionary;
 }
@@ -134,6 +138,12 @@ NSString * cellIdentify = @"cellIdentify";
             animationVC = [[TransitionAnimationViewController alloc]init];
             animationVC.title = @"转场动画";
             break;
+        }
+        case 5://键盘动画效果
+        {
+            animationVC = [[KeyboardViewController alloc]init];
+            animationVC.title = @"键盘动画";
+            
         }
         default:
             break;

@@ -143,11 +143,11 @@
 
     CABasicAnimation *animation=[CABasicAnimation animationWithKeyPath:@"opacity"];
     
-    animation.fromValue=[NSNumber numberWithFloat:1.0];
+    animation.fromValue=[NSNumber numberWithFloat:0.2];
     
-    animation.toValue=[NSNumber numberWithFloat:0.2];
+    animation.toValue=[NSNumber numberWithFloat:1.0];
     
-    animation.repeatCount=MAXFLOAT;
+//    animation.repeatCount=MAXFLOAT;
     
     animation.duration=1;
     
@@ -157,7 +157,7 @@
     
     animation.timingFunction=[CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseIn];
     
-    animation.autoreverses=YES;
+//    animation.autoreverses=YES;
     
     
     //演员初始化
